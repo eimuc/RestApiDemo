@@ -29,5 +29,10 @@ namespace RestApiDemo.Controllers
         {
             _shopService.AddItem(item);
         }
+        [HttpDelete("{id}")]
+        public void DeleteItem(int id)
+        {
+            _shopService.DeleteItem(id);
+        }
     }
 }
