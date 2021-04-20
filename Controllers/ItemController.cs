@@ -29,6 +29,11 @@ namespace RestApiDemo.Controllers
         {
             _shopService.AddItem(item);
         }
+        [HttpPut]
+        public void UpdateItem(Item item)
+        {
+            _shopService.AddItem(item);
+        }
         [HttpDelete("{id}")]
         public void DeleteItem(int id)
         {
